@@ -24,3 +24,6 @@ class Main { // Class named Main
         }
     }
 }
+
+
+// Seems to be an issue with setNext method
