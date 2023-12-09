@@ -15,8 +15,9 @@ class Main { // Class named Main
         // Creating nodes and linking them, forming a linked list
         TaskNode node1 = new TaskNode(makeDinner);
         TaskNode node2 = new TaskNode(doHomework);
+
+        // set pointer to next node
         
-    
     
     }
 }
