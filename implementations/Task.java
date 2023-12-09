@@ -3,11 +3,11 @@ package implementations;
 public class Task {
     private String name;
     private String description;
-    private int date;
+    private String date;
     private boolean priority; // High or low
 
     // Constructor should take parameters to initialize the object
-    public Task(String name, String description, int date, boolean priority) {
+    public Task(String name, String description, String date, boolean priority) {
         this.name = name;
         this.description = description;
         this.date = date;
@@ -25,7 +25,7 @@ public class Task {
     }
 
     // Getter for task date
-    public int getDate() {
+    public String getDate() {
         return date;
     }
 
