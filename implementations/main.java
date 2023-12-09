@@ -12,12 +12,15 @@ class Main { // Class named Main
         Task makeDinner = new Task("Dinner", "Make dinner for family", "09-12-23", true);
         Task doHomework = new Task("Task 2", "Description 2", "09-12-24", false);
 
-        // Creating nodes and linking them, forming a linked list
-        TaskNode node1 = new TaskNode(makeDinner);
-        TaskNode node2 = new TaskNode(doHomework);
-
         // set pointer to next node
-        
-    
+        makeDinner.setNext(doHomework);
+
+        // Traversing the linked list and printing task details
+        TaskNode current = makeDinner;
+        while (current != null) {
+            Task currentTask = current.getTask();
+            System.out.println("Task Details: " + currentTask.getDetails());
+            current = current.getNext();
+        }
     }
 }
