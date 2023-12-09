@@ -1,4 +1,5 @@
 package implementations; // The package name is "implementations"
+import java.util.LinkedList;
 
 class Main { // Class named Main
 
@@ -8,6 +9,7 @@ class Main { // Class named Main
 
     public static void main(String[] args) {
         // The main method, the entry point of the program
+        LinkedList taskmanager = new LinkedList();
         
     }
 }
