@@ -8,9 +8,15 @@ class Main { // Class named Main
     }
 
     public static void main(String[] args) {
-        // The main method, the entry point of the program
+        // task class instances
         Task makeDinner = new Task("Dinner", "Make dinner for family", "09-12-23", true);
-        String details = makeDinner.getDetails();
-        System.out.println(details);
+        Task doHomework = new Task("Task 2", "Description 2", "09-12-24", false);
+
+        // Creating nodes and linking them, forming a linked list
+        TaskNode node1 = new TaskNode(makeDinner);
+        TaskNode node2 = new TaskNode(doHomework);
+        
+    
+    
     }
 }
